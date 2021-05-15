@@ -5,35 +5,44 @@
   <title>WEB - CSS</title>
   <meta charset="utf-8">
   <style>
-    #grid{
-      display: grid;
-      grid-template-columns: 200px 1fr;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    h1 {
-      font-size:45px;
-      /*text-align: center;*/
-      border-bottom: 1px grey solid;
-      margin: 0px;
-      padding: 20px;
-    }
-    #grid ol{
-      border-right: 1px grey solid;
-      width: 100px;
-      margin: 0px;
-      padding: 40px;
-    }
-    body{
-      margin: 0;
-    }
+  #grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  a {
+
+  }
+  h1 {
+    font-size:45px;
+    /*text-align: center;*/
+    border-bottom: 1px grey solid;
+    margin: 0px;
+    padding: 20px;
+
+  }
+  #grid ol{
+    border-right: 1px grey solid;
+    width: 100px;
+    margin: 0px;
+    padding: 40px;
+  }
+  body{
+    margin: 0;
+  }
 
   </style>
 </head>
 <body>
+
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" name="" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" name="" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
